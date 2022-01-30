@@ -9,26 +9,28 @@
 </head>
 <body>
 
-
+    <!--Absolute div with input to define rounds and button to start a game!-->
     <div class="display absoluteDiv" id="absolute">
 
         <div class="header">Define your rounds:</div>
+
         <input type="text" id="rounds">
+
         <div class="header display">
             <button id="start">Start a game</button>
         </div>
 
     </div>
 
-    </div>
+    <!--Resset button on top-->
     <div class="fixed display">
         <button class="reset" id="reset">Reset</button>
     </div>
 
-
+    <!--Div wrapper-->
     <div class="display wrapper">
 
-
+        <!--Div with infos...-->
         <div id="div1" class="display">
             <div id="roundShow" class="rounds">Rounds To Play: 0 </div>
             <div id="won" class="wonLost">Won: 0 </div>
@@ -36,9 +38,10 @@
             <div id="lost" class="wonLost">Lost: 0 </div>
         </div>
 
-
+        <!--dv2 with options to click on and 2 choosed options div-->
         <div id="div2" class="display">
 
+            <!--Div with possible options-->
             <div class="chooseWrapper display">
                 <div class="header">Choose your move:</div>
                 <img src="./rock.svg" data-value="1" width="200px" alt="" id="stone" onclick="check(event)">
@@ -46,7 +49,7 @@
                 <img src="./scissors.svg" data-value="3" width="200px" alt="" id="scissors" onclick="check(event)">
             </div>
 
-
+            <!--Div with 2 div to show what have you choosed-->
             <div class="chooseWrapper display">
                 <div class="header yourMoves">Your moves:</div>
                 <div class="header display">
