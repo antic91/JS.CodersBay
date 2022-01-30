@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+    height: 600px;
+}
+
+h2{
+  margin-bottom: 25px;
+}
+
+input{
+  font-size: 16px;
+  width: 300px;
+  padding: 10px 5px;
+  margin-right: 50px;
+}
+
+button{
+  font-size: 14px;
+  padding: 10px 30px;
+}

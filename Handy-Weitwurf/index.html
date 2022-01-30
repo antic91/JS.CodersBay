@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="inputs display">
+        <h1>Choose your angle in a section under..</h1>
+        <h1>Choose Force</h1>
+        <div class="wrappInputs display">
+            <input type="text" name="angle" id="angleInput">
+            <input type="text" name="angle" id="forceInput">
+        </div>
+        <div class="wrappInputs display">
+            <button onclick="fire()">Fire!</button>
+            <div id="attempts" class="attempts"></div>
+        </div>
+        
+    </div>
+
+
+    <div class="display absoluteDiv" id="absolute">
+
+        <div class="header">Define your rounds:</div>
+
+        <input type="text" id="rounds">
+
+        <div class="header display">
+            <label for="select">Choose platform</label>
+        
+            <select name="platform" id="platform">
+                <option value="Earth">Earth</option>
+                <option value="Moon">Moon</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+            </select>
+        </div>
+
+        <div class="header display">
+            <button id="start" onclick="start()">Start a game</button>
+        </div>
+
+    </div>
+
+    <div class="display wrapper" id="wrapper">
+        <!--Absolute div to show data-->
+        <div class="absoluteData display" id="absoluteData">
+            <h2 id="distance">Distance: 0</h2>
+            <h2 id="force">Force: 0</h2>
+            <h2 id="angle">Angle: 0</h2>
+            <h2 id="gravitation">Gravitation: 0</h2>
+        </div>
+
+        <!--Absolute div to set up phone and on click to fire it up :D-->
+        <div class="absolutePhone display" id="absolutePhone">
+            <img src="./cellphone.png" class="absImage" id="imagePhone" width="40px" alt="">
+        </div>
+
+        <img src="./ufo.png" id="imageAlien" width="60px" alt="">
+
+    </div>
+
+    <script src="./js.js"></script>
+</body>
+</html>

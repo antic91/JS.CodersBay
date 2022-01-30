@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="fixed display">
+        <button class="reset" id="btn">Start a game</button>
+    </div>
+
+
+    <div class="display wrapper">
+
+
+        <div id="div1" class="display">
+            <div id="triesShow" class="rounds">Tries: 5 </div>
+            <div id="roundShow" class="rounds">Upper Limit: 100 </div>
+        </div>
+
+
+        <div id="div2" class="display">
+
+            <div class="chooseWrapper display">
+                <div class="header" style="margin-bottom: 25px;"  id="try">Try: 1</div>
+                <div class="header" style="margin-bottom: 0;" id="try">
+                    <input type="text" id="userInp"> 
+                </div>
+                <div class="header" id="try">
+                    <button id="try" onclick="tryIt(event)" disabled>Try</button>
+                </div>
+            </div>
+
+
+            <div class="chooseWrapper display">
+                <div class="header yourMoves">Result:</div>
+                <div class="header yourMoves" style="margin-bottom: 25px;"id="resultDiv"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="./js.js"></script>
+</body>
+</html>

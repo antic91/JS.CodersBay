@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="display absoluteDiv" id="absolute">
+
+        <div class="header">Define your rounds:</div>
+        <input type="text" id="rounds">
+        <div class="header display">
+            <button id="start">Start a game</button>
+        </div>
+
+    </div>
+
+    </div>
+    <div class="fixed display">
+        <button class="reset" id="reset">Reset</button>
+    </div>
+
+
+    <div class="display wrapper">
+
+
+        <div id="div1" class="display">
+            <div id="roundShow" class="rounds">Rounds To Play: 0 </div>
+            <div id="won" class="wonLost">Won: 0 </div>
+            <div id="draw" class="wonLost">Draw: 0 </div>
+            <div id="lost" class="wonLost">Lost: 0 </div>
+        </div>
+
+
+        <div id="div2" class="display">
+
+            <div class="chooseWrapper display">
+                <div class="header">Choose your move:</div>
+                <img src="./rock.svg" data-value="1" width="200px" alt="" id="stone" onclick="check(event)">
+                <img src="./papier.svg" data-value="2" width="200px" alt="" id="papier" onclick="check(event)">
+                <img src="./scissors.svg" data-value="3" width="200px" alt="" id="scissors" onclick="check(event)">
+            </div>
+
+
+            <div class="chooseWrapper display">
+                <div class="header yourMoves">Your moves:</div>
+                <div class="header display">
+                    <h1>Computer:</h1>
+                    <h1>You:</h1>
+                </div>
+                <div class="header display">
+                    <div id="choosedComp" class="choosedCompUser display">
+                        <div class="image" id="left"></div>
+                    </div>
+                    <div id="choosedUser" class="choosedCompUser display">
+                        <div class="image" id="right"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="./js.js"></script>
+</body>
+</html>

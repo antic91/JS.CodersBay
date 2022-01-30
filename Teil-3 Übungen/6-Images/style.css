@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+    height: 600px;
+}
+
+div{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 25px;
+}
+img{
+  position: relative;
+  border: none;
+  outline: none;
+}
+
+button{
+  font-size: 14px;
+  padding: 10px 30px;
+}

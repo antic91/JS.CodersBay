@@ -1,0 +1,155 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+*:focus{
+  outline: none;
+}
+
+/*Flex class*/
+.displayFlex{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+html{
+  overflow-y: scroll;
+  font-size: 100%;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+/*Styling wrapper*/
+#wrapper{
+  position: absolute;
+  width: 100%;
+  min-height: 100%; 
+  top: 0;
+  left: 0;
+  justify-content: center;
+  padding-top: 120px;
+} 
+
+
+
+.bannerContact{
+  background-color: black;
+  background-image: none;
+}
+
+
+/*Form style*/
+form{
+  width: 100%;
+  grid-area: d;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 25px;
+  padding: 0 30px;
+  justify-self: center;
+  overflow: visible;
+}
+
+
+
+/*Styling inputs***/
+input{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 5px;
+  border: 1px solid #000000;
+  outline: none;
+}
+form select{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 5px;
+  border: 1px solid #000000;
+  outline: none;
+}
+form textarea{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 5px;
+  border: 1px solid #000000;
+  outline: none;
+  resize: vertical;
+}
+form button{
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgba(216, 25, 94, 0.7);
+}
+/*Media Q.**************************************/
+
+.message{
+  grid-area: h;
+  font-size: 12px;
+  color: red;
+}
+
+.display{
+  display: none;
+}
+
+@media (min-width:320px) { 
+}
+
+@media (min-width:480px) {
+}
+
+@media (min-width:600px) {
+}
+
+@media (min-width:801px) {
+
+  /*Destination**************************/
+  form{
+      width: 90%;
+      grid-template-columns: repeat(2,2fr);
+      grid-template-areas: "a b"
+                           "c d"
+                           "e e"
+                           "f f"
+                           "g g"
+                           "h h";
+  }
+  input[name=name]{
+      grid-area: a;
+  }
+  input[type=email]{
+      grid-area: b;
+  }
+  input[type=number]{
+      grid-area: c;
+  }
+  input[name=adress]{
+      grid-area: d;
+  }
+  form select{
+      grid-area: e;
+  }
+  form textarea{
+      grid-area: f;
+  }
+  form button{
+      grid-area: g;
+  }
+}
+
+@media (min-width:1025px) {
+}
+
+@media (min-width:1281px) {
+}

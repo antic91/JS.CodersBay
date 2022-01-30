@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="fixed display">
+       <h1 id="h1">Break the Code!</h1>
+    </div>
+
+
+    <div class="display wrapper">
+        <div class="calc">
+            <div id="divTop" class="divTop display">
+                <span id="span1">_</span>
+                <span id="span2">_</span>
+                <span id="span3">_</span>
+            </div>
+
+            <button class="btn1" onclick="addNum(event)" value="1">1</button>
+            <button class="btn2" onclick="addNum(event)" value="2">2</button>
+            <button class="btn3" onclick="addNum(event)" value="3">3</button>
+            <button class="btn4" onclick="addNum(event)" value="4">4</button>
+            <button class="btn5" onclick="addNum(event)" value="5">5</button>
+            <button class="btn6" onclick="addNum(event)" value="6">6</button>
+            <button class="btn7" onclick="addNum(event)" value="7">7</button>
+            <button class="btn8" onclick="addNum(event)" value="8">8</button>
+            <button class="btn9" onclick="addNum(event)" value="9">9</button>
+            <button class="btn0" onclick="addNum(event)" value="0">0</button>
+
+            <button class="btnConfirm" id="btnConfirm" onclick="check()">Confirm</button>
+            <button class="btnReset" id="btnReset" onclick="reset()">Reset</button>
+
+            <div id="divShow" class="divShow display">
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+                <div class="childRes display"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js.js"></script>
+</body>
+</html>
