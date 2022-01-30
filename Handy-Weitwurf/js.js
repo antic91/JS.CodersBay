@@ -183,10 +183,12 @@ function fire(){
 
         force = Number(forceInput.value);
         angle = Number(document.getElementById("angleInput").value);
-        document.getElementById("angle").innerText = "Angle: " + angle + "deg";
-        fired = true;
-        movePhone();
-        inputAttempts--;
+        if(force != 0 && angle != 0){
+            document.getElementById("angle").innerText = "Angle: " + angle + "deg";
+            fired = true;
+            movePhone();
+            inputAttempts--;
+        }
     }
     document.getElementById("force").innerText = "Force: " + force.toFixed(2) + "m/s";
     attempts.innerHTML = "<h2>Attempts: " + inputAttempts +"</h2>";

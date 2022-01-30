@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!--div on top button to fire and and inputs for force adn angle-->
     <div class="inputs display">
+
         <h1>Choose your angle in a section under..</h1>
         <h1>Choose Force</h1>
+
         <div class="wrappInputs display">
             <input type="text" name="angle" id="angleInput">
             <input type="text" name="angle" id="forceInput">
         </div>
+
         <div class="wrappInputs display">
             <button onclick="fire()">Fire!</button>
             <div id="attempts" class="attempts"></div>
         </div>
-        
+
     </div>
 
-
+    <!--Absolute div with start button and input to define rounds...-->
     <div class="display absoluteDiv" id="absolute">
 
         <div class="header">Define your rounds:</div>
@@ -47,8 +50,12 @@
 
     </div>
 
+
+
+    <!--Diw wrapper with background image, phone, alien....-->
     <div class="display wrapper" id="wrapper">
-        <!--Absolute div to show data-->
+
+        <!--Absolute div to show data on the right side/top-->
         <div class="absoluteData display" id="absoluteData">
             <h2 id="distance">Distance: 0</h2>
             <h2 id="force">Force: 0</h2>
@@ -56,11 +63,12 @@
             <h2 id="gravitation">Gravitation: 0</h2>
         </div>
 
-        <!--Absolute div to set up phone and on click to fire it up :D-->
+        <!--Absolute div to set up phone and on move to set up the angle-->
         <div class="absolutePhone display" id="absolutePhone">
+            <!--phone image-->
             <img src="./cellphone.png" class="absImage" id="imagePhone" width="40px" alt="">
         </div>
-
+        <!--Alien image, we are setting its position with random number...-->
         <img src="./ufo.png" id="imageAlien" width="60px" alt="">
 
     </div>

@@ -43,8 +43,7 @@ body{
   font-size: 28px;
   color: #ffffff;
 }
-
-
+/********Inputs style***********/
 input{
   font-size: 16px;
   font-weight: 600;
@@ -54,7 +53,7 @@ input{
   border: none;
   outline: none;
 }
-
+/******Absolute div start button***/
 .absoluteDiv .header button{
   font-size: 18px;
   font-weight: 700;
@@ -71,7 +70,7 @@ input{
 }
 /*************************/
 
-
+/*Class to set every section 100 onabsolute div...*/
 .header{
   font-size: 22px;
   font-weight: 700;
@@ -132,7 +131,7 @@ select{
 }
 
 
-/*Absolute div in wrapper to show distance, angle, gravitation and Velocity....*/
+/*Absolute div in wrapper to show distance, angle, gravitation and Velocity righztSide/Top....*/
 .absoluteData{
   position: absolute;
   top: 0;
@@ -149,7 +148,7 @@ select{
 }
 
 
-/*Absolute div to set up phone and on click to fire it up :D*/
+/*Absolute div to set up phone and move/click to set up the angle...*/
 
 .absolutePhone{
   position: absolute;
@@ -181,21 +180,24 @@ select{
   justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.3);
 }
+/*Two h1 header on the top!**/
 .inputs h1{
   width: 50%;
   text-align-last: center;
   margin-bottom: 10px;
 }
 
-
+/*Class -- wrapper of inputs on the top!*/
 .wrappInputs{
   width: 100%;
   justify-content: space-around;
 }
+
 .wrappInputs input{
   margin-bottom: 10px;
 }
-.inputs button{
+
+.wrappInputs button{
   font-size: 18px;
   background-color: #ffffff;
   border: none;
